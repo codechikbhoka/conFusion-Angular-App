@@ -78,7 +78,7 @@ angular.module('confusionApp')
     $scope.sendFeedback = function () {
 
 
-        if ($scope.feedback.agree && ($scope.feedback.mychannel == "")) {
+        if ($scope.feedback.agree && ($scope.feedback.mychannel === "")) {
             $scope.invalidChannelSelection = true;
         } else {
             $scope.invalidChannelSelection = false;
@@ -132,7 +132,7 @@ angular.module('confusionApp')
             rating: 5,
             comment: ""
         };
-    }
+    };
 }])
 
 // implement the IndexController and About Controller here
