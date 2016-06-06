@@ -204,7 +204,8 @@ angular.module('confusionApp')
             $scope.showMenu = true;
         },
         function (response) {
-            $scope.message = "Error: " + response.status + " " + response.statusText;
+            // $scope.message = "Error: " + response.status + " " + response.statusText;
+            $scope.message = "Please login";
         });
 
     $scope.select = function (setTab) {
